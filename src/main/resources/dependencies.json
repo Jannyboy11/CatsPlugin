@@ -1,0 +1,25 @@
+{
+  "repositories": {
+    "maven central": "https://repo.maven.apache.org/maven2"
+  },
+  "dependencies": [
+    {
+      "groupId": "org.typelevel",
+      "artifactId": "cats-core_2.13",
+      "version": "2.5.0",
+      "repository": "maven central"
+    },
+    {
+      "groupId": "org.typelevel",
+      "artifactId": "simulacrum-scalafix-annotations_2.13",
+      "version": "0.5.4",
+      "repository": "maven central"
+    },
+    {
+      "groupId": "org.typelevel",
+      "artifactId": "cats-kernel_2.13",
+      "version": "2.5.0",
+      "repository": "maven central"
+    }
+  ]
+}
