@@ -7,13 +7,16 @@ scalaVersion := "2.13.5"
 
 resolvers += "spigot-repo" at "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
 resolvers += "jitpack" at "https://jitpack.io/"
-resolvers += "bristermitten" at "https://repo.bristermitten.me/repository/maven-releases/"
 resolvers += Resolver.mavenCentral
 resolvers += Resolver.mavenLocal
+//original pdm repository:
+//resolvers += "bristermitten" at "https://repo.bristermitten.me/repository/maven-releases/"
 
+//original pdm dependency:
+//libraryDependencies += "me.bristermitten" % "pdm" % "0.0.33"
+libraryDependencies += "com.github.Jannyboy11.pdm" % "pdm" % "0.0.33-ScalaLoader"
 libraryDependencies += "org.spigotmc" % "spigot-api" % "1.16.5-R0.1-SNAPSHOT" % "provided"
 libraryDependencies += "com.github.Jannyboy11.ScalaPluginLoader" % "ScalaLoader" % "v0.14.5" % "provided"
-libraryDependencies += "me.bristermitten" % "pdm" % "0.0.33-ScalaLoader"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.5.0" % "provided" //will be included by pdm
 
 assemblyShadeRules in assembly := Seq(
