@@ -16,7 +16,7 @@ resolvers += Resolver.mavenLocal
 //libraryDependencies += "me.bristermitten" % "pdm" % "0.0.33"
 libraryDependencies += "com.github.Jannyboy11.pdm" % "pdm" % "0.0.33-ScalaLoader"
 libraryDependencies += "org.spigotmc" % "spigot-api" % "1.16.5-R0.1-SNAPSHOT" % "provided"
-libraryDependencies += "com.github.Jannyboy11.ScalaPluginLoader" % "ScalaLoader" % "v0.14.5" % "provided"
+libraryDependencies += "com.github.Jannyboy11.ScalaPluginLoader" % "ScalaLoader" % "v0.14.6" % "provided"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.5.0" % "provided" //will be included by pdm
 
 assemblyShadeRules in assembly := Seq(
