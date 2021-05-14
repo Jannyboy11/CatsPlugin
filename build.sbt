@@ -1,5 +1,5 @@
 val Name = "CatsPlugin"
-val Version = "1.0"
+val Version = "1.0.1"
 
 name := Name
 version := Version
@@ -13,7 +13,7 @@ resolvers += Resolver.mavenLocal
 
 libraryDependencies += "org.spigotmc" % "spigot-api" % "1.16.5-R0.1-SNAPSHOT" % "provided"
 libraryDependencies += "com.github.Jannyboy11.ScalaPluginLoader" % "ScalaLoader" % "v0.14.5" % "provided"
-libraryDependencies += "me.bristermitten" % "pdm" % "0.0.33"
+libraryDependencies += "me.bristermitten" % "pdm" % "0.0.33-ScalaLoader"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.5.0" % "provided" //will be included by pdm
 
 assemblyShadeRules in assembly := Seq(
